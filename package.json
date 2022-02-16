@@ -1,0 +1,12 @@
+{
+  "name": "rpclaimbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "van",
+  "dependencies": {
+    "eosjs": "^22.1.0",
+    "node-cron": "^3.0.0",
+    "node-fetch": "^2.6.7"
+  }
+}
