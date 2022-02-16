@@ -57,7 +57,7 @@ cron.schedule("30 * * * *", async () => {
     console.log("Last extend  : " + lastExtendTime);
     console.log("Difference   : " + timeDiff);
 
-    if (timeDiff < 3600000) {
+    if (timeDiff < 3540000) {
       console.log("Recently increased claim limit, waiting until next hour.");
     } else {
       console.log(
