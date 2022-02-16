@@ -23,7 +23,11 @@ const PRIVATE_KEY = ["xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"];
 // YOUR CLAIM EXTENSION COST GOES HERE
 // To figure this out, set your claim limit to whatever you want it to be,
 // then when it drops 1% after an hour, see how much it would cost to increase
-// it back to the original value
+// it back to the original value.
+// NOTE: It appears that each time you raise a claim limit, you're given an extra 1%.
+// It's uncertain if this is intentional, but for now you may be able to
+// cut this number in half, or modify the script to raise
+// the limit every 2 hours instead of every hour.
 const CLAIM_LIMIT_AETHER_COST = 1041.0203; // 100000 limit
 
 const SIG_PROVIDER = new JsSignatureProvider(PRIVATE_KEY);
